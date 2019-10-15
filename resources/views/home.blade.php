@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HOME</title>
   <link href="{{ asset('/css/app.css') }}" rel="stylesheet">
-  <!-- Fonts -->
   <link href='//fonts.googleapis.com/css?family=Roboto:400,300' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display|Spectral" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bangers rel="stylesheet">
@@ -29,14 +28,15 @@ jQuery(function($) {
 <nav>
   <ul>
     <li class=”current”><a href=”#”>Home</a></li>
-    <li><a href=”#”>News</a></li>
-    <li><a href=”#”>About</a></li>
-    <li><a href=”#”>Access</a></li>
-    <li><a href=”#”>Blog</a></li>
+    <li><a href="#">News</a></li>
+    <li><a href="{{ action('MemberController@index') }}">Member</a></li>
+    <li><a href="#">Schedule</a></li>
+    <li><a href="#">Blog</a></li>
   </ul>
 </nav>
 
-  <div class="bg-slider__title"></div>
+  <div class="bg-slider__title">Clover Official</div>
+
 </div>
 
 </body>
